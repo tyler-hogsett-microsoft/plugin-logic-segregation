@@ -338,3 +338,12 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+
+# ignore the tools folder
+tools
+
+# ignore temp folder
+temp
+
+# ignore nuget.exe
+nuget.exe
