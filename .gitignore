@@ -342,8 +342,8 @@ healthchecksdb
 # ignore the tools folder
 tools
 
-# ignore temp folder
-temp
+# ignore packed-solutions folder
+packed-solutions
 
 # ignore nuget.exe
 nuget.exe

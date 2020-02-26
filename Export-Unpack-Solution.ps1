@@ -2,24 +2,24 @@ $solutionName = "custom_full_name"
 
 $conn = Get-CrmConnection -InteractiveMode
 
-if (Test-Path ./temp) {
+if (Test-Path ./packed-solutions) {
 	Remove-Item `
-		-Path ./temp `
+		-Path ./packed-solutions `
 		-Recurse `
 		-Force
 }
 
-mkdir temp
+mkdir packed-solutions
 
 Export-CrmSolution `
 	-conn $conn `
 	-SolutionName $solutionName `
-	-SolutionFilePath ./temp `
+	-SolutionFilePath ./packed-solutions `
 	-SolutionZipFileName "$solutionName.zip"
 Export-CrmSolution `
 	-conn $conn `
 	-SolutionName $solutionName `
-	-SolutionFilePath ./temp `
+	-SolutionFilePath ./packed-solutions `
 	-SolutionZipFileName "$($solutionName)_managed.zip" `
 	-Managed
 
@@ -28,7 +28,7 @@ Set-Alias SolutionPackager $solutionPackagerPath -Scope Global -Verbose
 
 SolutionPackager `
 	/action:Extract `
-	/zipfile:temp/$solutionName.zip `
+	/zipfile:packed-solutions/$solutionName.zip `
 	/packagetype:Both `
 	/folder:SolutionContents `
 	/allowDelete:Yes
