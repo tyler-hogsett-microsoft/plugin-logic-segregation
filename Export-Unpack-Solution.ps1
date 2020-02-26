@@ -31,6 +31,7 @@ SolutionPackager `
 	/zipfile:packed-solutions/$solutionName.zip `
 	/packagetype:Both `
 	/folder:SolutionContents `
+	/map:map.xml `
 	/allowDelete:Yes
 
-Stop-Process -Id $PID
+#Stop-Process -Id $PID

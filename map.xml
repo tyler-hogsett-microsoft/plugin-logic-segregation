@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<Mapping>
+       <FileToFile map="MicrosoftPfeSamplesPluginLogicSegregationPluginsMe.dll" to="..\Plugins\bin\**\Microsoft.Pfe.Samples.PluginLogicSegregation.Plugins.Merged.dll" />
+</Mapping>

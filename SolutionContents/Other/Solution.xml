@@ -79,6 +79,9 @@
     </Publisher>
     <RootComponents>
       <RootComponent type="1" schemaName="contact" behavior="1" />
+      <RootComponent type="91" id="{3bb135d5-2f5b-47da-aa9b-7c4ef7f396f1}" schemaName="Microsoft.Pfe.Samples.PluginLogicSegregation.Plugins.Merged, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3536cc555bf56001" behavior="0" />
+      <RootComponent type="92" id="{b9e0b6db-0e58-ea11-a811-000d3a579b99}" behavior="0" />
+      <RootComponent type="92" id="{e078391e-0f58-ea11-a811-000d3a579c6c}" behavior="0" />
     </RootComponents>
     <MissingDependencies />
   </SolutionManifest>

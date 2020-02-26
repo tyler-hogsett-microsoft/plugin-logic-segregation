@@ -7,6 +7,7 @@ SolutionPackager `
 	/action:Pack `
 	/zipfile:packed-solutions/$solutionName.zip `
 	/packagetype:Both `
+	/map:map.xml `
 	/folder:SolutionContents
 
 Stop-Process -Id $PID

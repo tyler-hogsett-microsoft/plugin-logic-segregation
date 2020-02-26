@@ -21,6 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{12
 	ProjectSection(SolutionItems) = preProject
 		Export-Unpack-Solution.ps1 = Export-Unpack-Solution.ps1
 		Install-Tools.ps1 = Install-Tools.ps1
+		map.xml = map.xml
 		Pack-Solution.ps1 = Pack-Solution.ps1
 	EndProjectSection
 EndProject
@@ -43,6 +44,9 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SolutionContents", "Solutio
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "22957"
 		SlnRelativePath = "SolutionContents\"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{EDF97B9D-950D-4055-A3C4-4BD283818A7D} = {EDF97B9D-950D-4055-A3C4-4BD283818A7D}
 	EndProjectSection
 EndProject
 Global
